@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Juego</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+        <script type="text/javascript" src="jquery-2.1.4.min.js" ></script>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="icono" class="navbar-nav mr-3" href="#">
+                            <img id="icono" src="img/logotipo.svg"  alt="logotipo"/>
+                        </a>
+                    </li>
+                    <li class="nav-item active mt-2">
+                        <a class="navbar-nav" href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Agencias aeroespaciales en el mundo</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="NASA.html">NASA</a>
+                            <a class="dropdown-item" href="Roscosmos.html">Roscosmos</a>
+                            <a class="dropdown-item" href="ESA.html">ESA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="navbar-nav" href="registrarse.html">
+                            Registrarse
+                        </a>
+                    </li>                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Introduccion</h1>
+            <p>
+                Está página trata de las agencias espaciales más conocidas donde recoge todas las nuevas noticas de cada una de estas agencias.
+            </p>
+
+            <div class="table-responsive-sm table-responsive-md table-responsive-lg">
+                <table class="table table-bordered table-striped table-dark" summary="table #1 with IDs and HEADERS">
+                    <caption>Lista de las Agencias espaciales más conocidas</caption>
+                    <thead>
+                        <tr>
+                            <th id="#" scope="col">#</th>
+                            <th id="agenciaEspacial" scope="col">Agencia espacial</th>
+                            <th id="logotipo" scope="col">Logotipo</th>
+                            <th id="deDondeEs" scope="col">De donde es</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th headers="#" scope="row">1</th>
+                            <td headers="agenciaEspacial">
+                                <a href="https://www.nasa.gov/">NASA</a>
+                            </td>
+                            <td headers="logotipo">
+                                <img id="foto0" src="img/nasa.svg" alt="imagen nasa"/>
+                            </td>
+                            <td headers="deDondeEs">
+                                Agencia espacial Norte americana
+                            </td>
+                        </tr>
+                        <tr>
+                            <th  headers="#" scope="row">2</th>
+                            <td headers="agenciaEspacial">
+                                <a href="http://en.roscosmos.ru/">Roscosmos</a>
+                            </td>
+                            <td headers="logotipo">
+                                <img id="foto0" src="img/roscosmos.png" alt="imagen roscosmos"/>
+                            </td>
+                            <td headers="deDondeEs">
+                                Agencia espacial Rusa
+                            </td>
+                        </tr>
+                        <tr>
+                            <th headers="#" scope="row">3</th>
+                            <td headers="agenciaEspacial">
+                                <a href="https://www.esa.int/">ESA</a>
+                            </td>
+                            <td headers="logotipo">
+                                <img id="foto0" src="img/ESA.svg" alt="imagen esa"/>
+                            </td>
+                            <td headers="deDondeEs">
+                                <p>
+                                    Agencia espacial Europea
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <audio src="Sidecars_-_Fan_de_Ti_(Videoclip).mp3" controls type="audio/mp3" autoplay loop></audio>
+        </main>
+        <footer>
+            <!--poner animacion-->
+            <nav class="navbar navbar-dark bg-dark fixed-bottom">
+                <p class="navbar-brand">MARINA FLORES FERNANDEZ</p>
+                <a class="navbar-brand" href="https://cifpvirgendegracia.com/">
+                    <img id="icono" src="img/logotipo.svg" alt="logotipo"/>
+                </a>
+                <a class="navbar-brand" href="https://www.facebook.com/cifpVirgen/">
+                    <img id="icono" src="img/facebook.png" alt="facebook"/>
+                </a>
+                <a class="navbar-brand" href="https://twitter.com/cifpvirgen">
+                    <img id="icono" src="img/twitter.png" alt="twitter"/>
+                </a>
+                <a class="navbar-brand" href="https://www.instagram.com/ifpvirgen/">
+                    <img id="icono" src="img/instagram.png" alt="instagram"/>
+                </a>
+                <a class="navbar-brand" href="https://achecker.ca/checker/index.php">
+                    Validador de archivos
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>

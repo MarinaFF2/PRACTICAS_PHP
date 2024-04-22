@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Juego</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Course CSS -->
+        <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+        <script type="text/javascript" src="jquery-2.1.4.min.js" ></script>
+    </head>
+    <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="icono" class="navbar-nav mr-3" href="index.html">
+                            <img id="icono" src="img/logotipo.svg"  alt="logotipo"/>
+                        </a>
+                    </li>
+                    <li class="nav-item active mt-2">
+                        <a class="navbar-nav" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Agencias aeroespaciales en el mundo</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="NASA.html">NASA</a>
+                            <a class="dropdown-item" href="Roscosmos.html">Roscosmos</a>
+                            <a class="dropdown-item" href="ESA.html">ESA</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Registrarse para suscribirse a la pagina</h1>
+            <div>
+                <form action="sefr" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <p><label for="inputEmail">
+                                Email</label>
+                                <input type="email" class="form-control" placeholder="Email">
+                            
+                            </p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <p><label for="inputPassword">
+                                Password
+                                <input type="password" class="form-control" placeholder="Password">
+                            </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <label for="inputfecha">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" placeholder="fecha de nacimiento">
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEdad">
+                            Edad
+                            <input type="number" class="form-control" placeholder="edad">
+                        </label>
+                    </div>
+                    <div class="form-row">                        
+                        <div class="form-group col-md-6">
+                            <fieldset>
+                                <legend>Continente</legend>
+                                <select class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>America</option>
+                                    <option>Asia</option>
+                                    <option>Oceania</option>
+                                    <option>Europa</option>
+                                    <option>Africa</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputFoto">
+                                Foto usuario
+                                <input type="file" class="form-control">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row">                        
+                        <div class="form-group col-md-6">
+                            <fieldset>
+                                <legend>¿Donde vives?</legend>
+                                <label for="inputCiudad">
+                                    Ciudad
+                                    <input type="radio" class="form-control" name="ciuPue" value="ciudad">
+                                </label>
+                                <label for="inputPueblo">
+                                    Pueblo
+                                    <input type="radio" class="form-control" name="ciuPue" value="pueblo">
+                                </label>
+                            </fieldset>
+                        </div>                       
+                        <div class="form-group col-md-6">
+                            <label>Una breve descripción de ti:
+                                <textarea>
+                                </textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>¿Qué agencia espacial te gustaría saber sus noticias?</legend>
+                            <label class="form-check-label" for="agencia1">
+                                NASA
+                                <input class="form-check-input" type="checkbox" id="agencia1" value="NASA">
+                            </label>
+                            <label class="form-check-label" for="agencia2">
+                                Roscosmos
+                                <input class="form-check-input" type="checkbox" id="agencia2" value="Roscosmos">
+                            </label><label class="form-check-label" for="agencia3">
+                                ESA
+                                <input class="form-check-input" type="checkbox" id="agencia3" value="ESA">
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn" id="limpiar"></button>
+                        <input type="submit" class="btn btn-primary" name="Registrate" value="Registrate"/>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!--poner animacion-->
+            <nav class="navbar navbar-dark bg-dark fixed-bottom">
+                <p class="navbar-brand">MARINA FLORES FERNANDEZ</p>
+                <a class="navbar-brand" href="https://cifpvirgendegracia.com/">
+                    <img id="icono" src="img/logotipo.svg" alt="logotipo"/>
+                </a>
+                <a class="navbar-brand" href="https://www.facebook.com/cifpVirgen/">
+                    <img id="icono" src="img/facebook.png" alt="facebook"/>
+                </a>
+                <a class="navbar-brand" href="https://twitter.com/cifpvirgen">
+                    <img id="icono" src="img/twitter.png" alt="twitter"/>
+                </a>
+                <a class="navbar-brand" href="https://www.instagram.com/ifpvirgen/">
+                    <img id="icono" src="img/instagram.png" alt="instagram"/>
+                </a>
+                <a class="navbar-brand" href="https://achecker.ca/checker/index.php">
+                    Validador de archivos
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
